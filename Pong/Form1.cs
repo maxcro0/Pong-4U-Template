@@ -87,7 +87,7 @@ namespace Pong
                 case Keys.Space:
                     if (newGameOk)
                     {
-                        SetParameters();
+                        InitializeGame();
                     }
                     break;
                 case Keys.Escape:
@@ -122,7 +122,7 @@ namespace Pong
         /// <summary>
         /// sets the ball and paddle positions for game start
         /// </summary>
-        private void SetParameters()
+        private void InitializeGame()
         {
             if (newGameOk)
             {
